@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         GGn Quick Download
 // @namespace    http://tampermonkey.net/
-// @version      1.0.0-alpha
+// @version      1.0.0
 // @description  Copy a page worth of (non-sticky) GGn download links to your clipboard for easy pasting
 // @author       KingKrab23
 // @match        https://*/torrents.php*
@@ -30,7 +30,7 @@ function copy_dl_links_to_clipboard() {
     if (specLink.length) {
         var text_to_copy = "";
         $.each( specLink, function( key, value ) {
-           text_to_copy += value + "\n"; //&#013; &#010; = line break
+           text_to_copy += value + "\n";
         });
 
         copyToClipboard(text_to_copy);
