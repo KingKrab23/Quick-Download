@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Gazelle Quick Download
 // @namespace    http://tampermonkey.net/
-// @version      1.0.0
+// @version      1.0.1
 // @description  Copy a page worth of (non-sticky) Gazelle download links to your clipboard for easy pasting
 // @author       KingKrab23
 // @match        https://*/torrents.php*
@@ -9,7 +9,7 @@
 // @require      https://code.jquery.com/jquery-1.7.2.min.js
 // ==/UserScript==
 
-$(".linkbox").first().before('<button id="copy_dl_links_to_clipboard" style="margin-top:15px;">Copy DL links to clipboard</button>');
+$(".linkbox").first().before('<button id="copy_dl_links_to_clipboard" style="margin-top:15px;margin-left:15px;">Copy DL links to clipboard</button>');
 
 var $temp = $("<textarea class='hidden'>");
 $("body").append($temp);
