@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Gazelle Quick Download
 // @namespace    http://tampermonkey.net/
-// @version      1.0.0-alpha
-// @description  Copy a page worth of (non-sticky) GGn download links to your clipboard for easy pasting
+// @version      1.0.0
+// @description  Copy a page worth of (non-sticky) Gazelle download links to your clipboard for easy pasting
 // @author       KingKrab23
 // @match        https://*/torrents.php*
 // @grant        none
